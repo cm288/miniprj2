@@ -7,7 +7,7 @@
             <p class="lead">Please use this form to contact the site owner</p></div>
 
         <div class="card-body">
-            <form action="/contact" method="post">
+            <form method="POST" action="{{route('contact.store')}}">
                 @csrf
                 <div class="form-group">
                     <label for="email">Email address</label>
